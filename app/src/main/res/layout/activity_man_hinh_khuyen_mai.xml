@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.thienphan.quantrivien.ManHinhKhuyenMai">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnTroVeKhuyenMai"
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:background="@drawable/button_gray"
+            android:drawableLeft="@android:drawable/ic_menu_revert"
+            android:gravity="left|center"
+            android:text="Trở về"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="428dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1.52">
+
+            <Button
+                android:id="@+id/btnThemKhuyenMai"
+                style="@style/AppTheme"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:background="@drawable/button_gray"
+                android:drawableLeft="@android:drawable/ic_menu_add"
+                android:gravity="left|center"
+                android:text="Thêm khuyến mãi"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Thông tin khuyến mãi"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvKhuyenMai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white" />
+
+</LinearLayout>
